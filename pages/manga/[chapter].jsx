@@ -231,7 +231,7 @@ export async function getServerSideProps({ req, res, params }) {
     const totalChapters = chaptersData.length;
     const numImages = chapterData.numImages;
     const mysummary = chapterData.summary;
-    const summary = mysummary.replace(/\s+/g, ' ').trim();
+    const summary = mysummary?.replace(/\s+/g, ' ').trim();
 
     const imageUrls = getImageUrls(chapterNumber, numImages);
 

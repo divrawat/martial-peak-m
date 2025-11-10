@@ -147,9 +147,9 @@ export default function Home() {
               <ul className="chapters-list">
                 {chapters.map((chapter, index) => (
                   <li key={index} className="chapter-item">
-                    <Link href={chapter.url} className="chapter-link">
+                    <a href={chapter.url} className="chapter-link">
                       {`${MANGA_NAME}, Chapter ${chapter.number}`}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
